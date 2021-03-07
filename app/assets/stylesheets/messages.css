@@ -11,12 +11,39 @@
 .side_header{
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user_name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.create_chatroom a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .side_body{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px 0;
+}
+
+.room_name a{
+  color: white;
+  text-decoration: none;
 }
 
 .main_chat{
@@ -41,3 +68,6 @@
   height: 90px;
   padding: 20px 40px;
 }
+
+
+
