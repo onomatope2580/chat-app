@@ -8,22 +8,7 @@
 </div>
 
 <div class="main_body">
-  <div class="info">
-    <div class="nickname">田村</div>
-    <div class="date">2020/3/7(Sun)</div>
-    <div class="time">16:10:30</div>
-  </div>
-  <div class="comment">
-  こんにちは
-  </div>
-  <div class="info">
-    <div class="nickname">今道</div>
-    <div class="date">2020/3/7(Sun)</div>
-    <div class="time">16:10:30</div>
-  </div>
-  <div class="comment">
-  よう！
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
